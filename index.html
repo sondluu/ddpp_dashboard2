@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="/script.js" defer></script>
+  
+  <meta charset="utf-8" />
+</head>
+
+<body>
+  <div id="app">
+    <!--   nav   -->
+    <nav class="nav">
+      <div class="nav__links">
+        <a class="link" href="#">About Noom</a>
+        <a class="link" href="#">Engagement</a>
+        <a class="link" href="#">Algorithm</a>
+      </div>
+    </nav>
+    <!--   header   -->
+    <header class="header">
+      <div class="header__info">
+        <h1 class="header__title">dDPP Provider Dashboard</h1>
+      </div>
+    </header>
+    <main class="main">
+      <h2 class="main__title">Patient dDPP Data</h2>
+      <section class="main__articles clearfix">
+        <!--    article     -->
+        <article class="article">
+          <div class="article__content">
+            <header>
+              <h2 class="article__title">Patient Name</h2>
+            </header>
+            <p>John Doe</p>
+            <div class="patient_name"></div>
+          </div>
+        </article>
+        <!--    article     -->
+        <article class="article">
+            <div class="article__content">
+              <header>
+                <h2 class="article__title">Enrollment Date</h2>
+              </header>
+              <p>Enrollment date goes here</p>
+              <div class="update_date"></div>
+            </div>
+          </article>
+        <!--    article    -->
+        <article class="article">
+          <div class="article__content">
+            <header>
+              <h2 class="article__title">Noom Start Date</h2>
+            </header>
+            <p>Date goes here</p>
+            <div class="noom_start_date"></div>
+          </div>
+        </article>
+        <!--    article    -->
+        <article class="article">
+          <div class="article__content">
+            <header>
+              <h2 class="article__title">Current Week</h2>
+            </header>
+            <p>Week number goes here</p>
+            <div class="noom_current_week"></div>
+          </div>
+        </article>
+        <!--    article    -->
+        <article class="article">
+          <div class="article__content">
+            <header>
+              <h2 class="article__title">Engagement Level</h2>
+            </header>
+            <p>Weight change goes here</p>
+            <div class="engage_level"></div>
+          </div>
+        </article>
+        <!--    article    -->
+        <article class="article">
+            <div class="article__content">
+              <header>
+                <h2 class="article__title">Last Update</h2>
+              </header>
+              <p>Update date goes here</p>
+              <div class="update_date"></div>
+            </div>
+          </article>
+      </section>
+      
+      <section>
+        <div id="showArea">
+            <p id="prompt">Sent SMS:</p>
+            <div id="sms-list">
+            </div>
+        </div>
+        <div id="typeArea">
+            <input type="text" id="toSend" name="toSend" placeholder="Type text message here & click Send"> 
+            <input type="submit" id="submitBtn" value="Send"
+                onclick="submitItem()"> 
+        </div>
+        </section>
+      
+    </main>
+  </div>
+</body>
+
+</html>

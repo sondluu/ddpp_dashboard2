@@ -1,0 +1,202 @@
+
+<style>
+    html, body {
+      margin: 0;
+/*       padding: 0; */
+/*       box-sizing: border-box; */
+    }
+
+    html {
+      width: 100%;
+      height: 100%;
+      font-size: 50%;
+    }
+
+    body {
+      width: 100%;
+      height: 100%;
+      background-color: rgb(255, 255, 255);
+/*       padding: 1rem; */
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #app {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+/*       border: 2px solid black; */
+      margin-bottom: 2rem;
+    }
+
+    .nav {
+      display: block;
+      height: 6rem;
+      background-color: #f4f4f4;
+      position: relative;
+    }
+
+    .nav__links {
+      display: block;
+      width: 100%;
+/*       padding: 1rem; */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .link,
+    .link:active,
+    .link:visited,
+    .link:link {
+      color: black;
+      font-size: 1.6 rem;
+    }
+
+    .header {
+      display: block;
+      height: 10vh;
+      /* padding: 1rem; */
+      /*       border: 2px solid black; */
+    }
+
+    /*  A NOTE ON VERTICAL ALIGNMENT WITHOUT FLEXBOX OR GRID: Notice, that if you have a position:absolute on a child element, the parent container  must have a position:relative  */
+    .header__info {
+      display: block;
+      width: 50%;
+      height: 100%;
+      background-color: #fffecd;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .header__title {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .main {
+      margin-top: 2rem;
+      display: block;
+      height: 100%;
+/*       padding: 0rem 1rem 1rem 1rem; */
+    }
+
+    .main__title {
+      text-align: center;
+    }
+
+    .main__articles {
+      display: block;
+/*       width: 600px; */
+      height: auto;
+/*       border: 1 px solid black; */
+      margin: 0 auto;
+    }
+
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+
+    .article {
+      display: inline-block;
+      /* float: left; */
+      /* NOTE: we introduce a float:left and as a result, we need to add a clearfix to the parent container */
+      width: 120px;
+/*       padding: 0.5rem; */
+    }
+
+    .article__content {
+/*       border: 2px solid black; */ 
+/*       padding: 0.5rem; */
+    }
+
+    .article__image {
+      width: 100%;
+      height: 100px;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .article__image--map {
+      background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Vancouver_by_Sentinel-2.jpg/1024px-Vancouver_by_Sentinel-2.jpg)
+    }
+
+    .article__image--city {
+      background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Concord_Pacific_Master_Plan_Area.jpg/1920px-Concord_Pacific_Master_Plan_Area.jpg)
+    }
+
+    .article__image--bridge {
+      background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Lions_Gate_Bridge_at_night.jpg/2560px-Lions_Gate_Bridge_at_night.jpg)
+    }
+
+    .article__image--mountains {
+      background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/8e/UBC_aerial_view-cropped.jpg)
+    }
+
+
+    #showArea {
+        background: white;
+        max-width: 600px;
+        /* padding: 20px; */
+        margin: 0 auto;
+        border: px solid #000;
+
+    }
+
+
+
+#prompt {
+        /* color: white; */
+        font-size: 15px;
+    }
+
+    input {
+        margin: 2px;
+        text-align: left;
+        padding: 5px;
+        font-size: 16px;
+    }
+
+    input[type=submit] {
+        padding: 8px;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    #showArea {
+        padding: 50px;
+    }
+
+    #typeArea {
+        background-color: black;
+        border-color: 5px solid #000;
+        padding: 30px;
+        display: flex;
+    }
+
+    #sms-list {
+        min-height: 100px;
+    }
+
+    #sms-list>p {
+        border-bottom: 1px solid #ddd;
+        padding: 10px 0 10px 0;
+        margin: 0;
+        font-size: 28px;
+    }
+
+    #toSend {
+        width: 85%;
+        font-size: 14px;
+    }
+  </style>
